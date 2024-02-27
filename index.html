@@ -13,7 +13,7 @@
         //http://localhost:3000/api/books
         async function fetchBooks() {
         try {
-            const response = await fetch('/bestseller'); // 백엔드 서버의 엔드포인트 호출
+            const response = await fetch('https://m47qivkogw2vy64mvfhmc6ttom0jydme.lambda-url.ap-northeast-2.on.aws/bestseller'); // 백엔드 서버의 엔드포인트 호출
             const data = await response.json();
 
             if (Array.isArray(data)) {
