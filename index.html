@@ -16,7 +16,7 @@
   const query = document.getElementById('searchInput').value;
   try {
     // http://localhost:3000/aladin/search?query=${query}
-    const response = await fetch(`https://hyeonapi.netlify.app/aladin/search?query=${query}`);
+    const response = await fetch(`https://m47qivkogw2vy64mvfhmc6ttom0jydme.lambda-url.ap-northeast-2.on.aws/aladin/search?query=${query}`);
     const data = await response.json();
     console.log(data); // 응답을 콘솔에 출력하여 확인
     displayResults(data);
